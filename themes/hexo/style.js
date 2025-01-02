@@ -7,14 +7,14 @@
 const Style = () => {
   return (<style jsx global>{`
     // 底色
-    body {
-        background-color: #f5f5f5;
+    body{
+        background-color: #f5f5f5
     }
-    .dark body {
+    .dark body{
         background-color: black;
     }
   
-    /* 菜单下划线动画 */
+    /*  菜单下划线动画 */
     #theme-hexo .menu-link {
         text-decoration: none;
         background-image: linear-gradient(#928CEE, #928CEE);
@@ -37,28 +37,20 @@ const Style = () => {
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 10%, rgba(0,0,0,0) 25%, rgba(0,0,0,0.2) 75%, rgba(0,0,0,0.5) 100%);
+        background:  linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 10%, rgba(0,0,0,0) 25%, rgba(0,0,0,0.2) 75%, rgba(0,0,0,0.5) 100%);
     }
 
-    /* 隐藏右侧栏 */
-    .sidebar {
-        display: none;
+    /* Custem */
+    .tk-footer{
+        opacity: 0;
     }
 
-    /* 调整主内容宽度 */
-    .main-content {
-        width: 100%;
-        margin-right: 0;
+    // 选中字体颜色
+    ::selection {
+        background: rgba(45, 170, 219, 0.3);
     }
 
-    /* 移除右侧栏后调整布局 */
-    #container-inner {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    /* 自定义滚动条 */
+    // 自定义滚动条
     ::-webkit-scrollbar {
         width: 5px;
         height: 5px;
@@ -73,14 +65,11 @@ const Style = () => {
     }
 
     * {
-        scrollbar-width: thin;
-        scrollbar-color: #49b1f5 transparent;
+        scrollbar-width:thin;
+        scrollbar-color: #49b1f5 transparent
     }
+    
 
-    // 选中字体颜色
-    ::selection {
-        background: rgba(45, 170, 219, 0.3);
-    }
   `}</style>)
 }
 
